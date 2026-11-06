@@ -2440,6 +2440,9 @@ def tower_end(name, why):
 
 def tower_return(name, origin, gm):
     d, x, y, z = origin
+    # The origin is wherever they typed the command, often mid-air on a flying Pokémon that is no longer under
+    # them; slow falling keeps that from becoming a fall death (huylba, 2026-11-06).
+    rc(f"effect give {name} minecraft:slow_falling 20 0 true")
     rc(f"execute in minecraft:{d} run tp {name} {x} {y} {z}")
     rc(f"gamemode {['survival', 'creative', 'adventure', 'spectator'][gm]} {name}")
 
