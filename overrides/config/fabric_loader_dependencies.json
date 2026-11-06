@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "overrides": {
+    "tmcraft": {
+      "-depends": {
+        "cobblemon": ""
+      },
+      "+depends": {
+        "cobblemon": ">=1.8.3 <1.9"
+      }
+    }
+  }
+}

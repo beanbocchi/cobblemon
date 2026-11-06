@@ -1,0 +1,53 @@
+{
+  "upstream": {
+    "project": "cobbleverse",
+    "version": "1.7.42",
+    "version_id": "4SKGla61"
+  },
+  "name": "COBBLEVERSE (Cobblemon 1.8 port)",
+  "version_suffix": "-cm1.8.4",
+  "update": {
+    "cobblemon": ["1.8.4F", "PdOzYHKU"],
+    "cobblemon-mega-showdown": ["1.3.3+1.8.4+1.21.1-release", "pToIDLtC"],
+    "navas-zamega": ["1.8.2+1.8.2", "CBalGwUD"],
+    "rctmod": ["0.19.2-beta", "rgfBfnW9"],
+    "rctapi": ["0.16.2-beta", "DoQNDXAU"],
+    "cobblemonraiddens": ["0.13.5+1.21.1", "q12LeWnP"],
+    "tmcraft": ["1.4.19+1.8.3", "Ux6Nixgo"],
+    "cobblemon-capture-xp": ["1.8.4-fabric-1.3.0", "Sc6S9mBv"],
+    "cobblemon-tim-core": ["1.8.4-fabric-1.36.1", "spCxxTX2"],
+    "catch-indicator": ["3.0", "qPETaVwo"],
+    "catch-rate-display": ["2.12.3+fabric", "rh5xmGEe"],
+    "cobblemon-fight-or-flight-reborn": ["0.11.1", "ot7BirRv"],
+    "cobblemon-pokenav": ["2.4.2", "wq3mHFqw"],
+    "cobblemon-safepastures": ["1.1.2+1.21.1", "gHHJ8bPf"],
+    "cobblemon-playerxp": ["1.1.2+1.21.1", "so3mMuer"],
+    "only-bottle-caps": ["1.5.0-fabric", "l7Gi3yRs"],
+    "more-cobblemon-tweaks": ["1.3.6-fabric", "g4m18yE2"]
+  },
+  "drop": {
+    "cobblemon-better-pokedex-scanner": "declares cobblemon <1.8.0 and has no 1.8 build"
+  },
+  "add": {
+    "allthemons-x-mega-showdown-legacy": ["v5.0", "qCn31XSy"]
+  },
+  "drop_overrides": {
+    "resourcepacks/ATMxMSD RP.zip": "built for Cobblemon 1.7; on 1.8 the client stops drawing after the loading screen. Replaced by the ATM x MSD v5.0 mod."
+  },
+  "patches": [
+    {
+      "files": ["config/defaultoptions/options.txt", "config/defaultoptions-common.toml", "config/resourcepackoverrides.json"],
+      "drop_pack": "file/ATMxMSD RP.zip"
+    },
+    {
+      "files": ["config/fancymenu/customization/cobbleverse_main.txt"],
+      "find": "[1.7.42](click:open_changelogs)",
+      "replace": "[1.7.42](click:open_changelogs) %#FFDE00%Cobblemon 1.8.4%#%"
+    },
+    {
+      "files": ["config/fancymenu/customization/cobbleverse_main.txt"],
+      "find": "  x = 5\n  y = -6\n  width = 174\n  height = 17",
+      "replace": "  x = 5\n  y = -6\n  width = 300\n  height = 17"
+    }
+  ]
+}

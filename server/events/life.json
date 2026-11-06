@@ -1,0 +1,248 @@
+{
+  "home": [
+    -3036,
+    65,
+    -1273
+  ],
+  "station": [
+    -3036,
+    64,
+    -1274
+  ],
+  "village_chest": [
+    [
+      -3035,
+      65,
+      -1276
+    ],
+    [
+      -3034,
+      65,
+      -1276
+    ]
+  ],
+  "quest_reward": [
+    "cobblemon:rare_candy",
+    5
+  ],
+  "quest_points": 5,
+  "badge_points": 10,
+  "season_rewards": [
+    [
+      [
+        "cobblemon:rare_candy",
+        20
+      ],
+      [
+        "cobblemon:ability_capsule",
+        1
+      ]
+    ],
+    [
+      [
+        "cobblemon:rare_candy",
+        10
+      ]
+    ],
+    [
+      [
+        "cobblemon:rare_candy",
+        5
+      ]
+    ]
+  ],
+  "shared_dex_milestones": [
+    [
+      25,
+      [
+        [
+          "cobblemon:rare_candy",
+          3
+        ]
+      ]
+    ],
+    [
+      50,
+      [
+        [
+          "cobblemon:rare_candy",
+          5
+        ],
+        [
+          "cobblemon:ultra_ball",
+          10
+        ]
+      ]
+    ],
+    [
+      100,
+      [
+        [
+          "cobblemon:rare_candy",
+          10
+        ],
+        [
+          "cobblemon:ability_capsule",
+          1
+        ]
+      ]
+    ],
+    [
+      200,
+      [
+        [
+          "cobblemon:rare_candy",
+          15
+        ],
+        [
+          "cobblemon:master_ball",
+          1
+        ]
+      ]
+    ],
+    [
+      300,
+      [
+        [
+          "cobblemon:rare_candy",
+          20
+        ],
+        [
+          "cobblemon:ability_patch",
+          1
+        ]
+      ]
+    ],
+    [
+      400,
+      [
+        [
+          "cobblemon:rare_candy",
+          25
+        ],
+        [
+          "cobblemon:master_ball",
+          1
+        ]
+      ]
+    ]
+  ],
+  "village_levels": [
+    {
+      "need": {
+        "balls": 128
+      },
+      "text": "128 Poké Balls of any kind",
+      "unlock": "a Poké Mart (CobbleDollars shop), plus a second Healing Machine and PC at the station"
+    },
+    {
+      "need": {
+        "balls": 256,
+        "cobblemon:rare_candy": 32
+      },
+      "text": "256 balls and 32 Rare Candy",
+      "unlock": "a Daycare with two pastures, and double shiny odds on Shiny Sunday"
+    },
+    {
+      "need": {
+        "balls": 512,
+        "cobblemon:rare_candy": 64,
+        "minecraft:diamond": 32
+      },
+      "text": "512 balls, 64 Rare Candy and 32 diamonds",
+      "unlock": "a Battle Court, and 10 Rare Candy for everyone"
+    }
+  ],
+  "roamers": [
+    "entei",
+    "raikou",
+    "suicune",
+    "latias",
+    "latios",
+    "cresselia",
+    "tornadus",
+    "thundurus",
+    "landorus"
+  ],
+  "landmarks": [
+    {
+      "id": "outpost",
+      "hint": "Pillager Outpost",
+      "pos": [
+        -2880,
+        70,
+        -2960
+      ],
+      "titles": [
+        "Discovered: Pillager Outpost",
+        "Khám phá: Tiền đồn cướp bóc"
+      ]
+    },
+    {
+      "id": "ruins",
+      "hint": "Ancient Ruins",
+      "pos": [
+        -4144,
+        70,
+        -2560
+      ],
+      "titles": [
+        "Discovered: Ancient Ruins",
+        "Khám phá: Tàn tích cổ"
+      ]
+    },
+    {
+      "id": "deepcity",
+      "hint": "Buried City",
+      "pos": [
+        -1744,
+        -40,
+        -976
+      ],
+      "titles": [
+        "Discovered: Buried City",
+        "Khám phá: Thành phố Cổ dưới lòng đất"
+      ]
+    },
+    {
+      "id": "igloo",
+      "hint": "Lonely Igloo",
+      "pos": [
+        -832,
+        70,
+        256
+      ],
+      "titles": [
+        "Discovered: Lonely Igloo",
+        "Khám phá: Lều tuyết cô độc"
+      ]
+    },
+    {
+      "id": "witch",
+      "hint": "Witch's Hut",
+      "pos": [
+        720,
+        70,
+        -2768
+      ],
+      "titles": [
+        "Discovered: Witch's Hut",
+        "Khám phá: Túp lều phù thủy"
+      ]
+    }
+  ],
+  "map_fragment_chance": 0.03,
+  "journal_hour": 21,
+  "raid_hour": 20,
+  "slash_commands": true,
+  "tower": {
+    "origin": [
+      -3100,
+      230,
+      -1700
+    ],
+    "arenas": 3,
+    "spacing": 40
+  },
+  "chat_only_commands": []
+}

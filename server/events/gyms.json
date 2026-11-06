@@ -1,0 +1,262 @@
+[
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_brock",
+  "name": "Gym Brock",
+  "type": "Rock",
+  "counters": "Water, Grass, Fighting, Steel",
+  "struct": "cobbleverse:brock",
+  "dim": "overworld",
+  "biome": "plains",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_misty",
+  "name": "Gym Misty",
+  "type": "Water",
+  "counters": "Grass, Electric",
+  "struct": "cobbleverse:misty",
+  "dim": "overworld",
+  "biome": "lukewarm oceans",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_ltsurge",
+  "name": "Gym Lt. Surge",
+  "type": "Electric",
+  "counters": "Ground",
+  "struct": "cobbleverse:ltsurge",
+  "dim": "overworld",
+  "biome": "savanna plateau",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_erika",
+  "name": "Gym Erika",
+  "type": "Grass",
+  "counters": "Fire, Ice, Flying, Bug, Poison",
+  "struct": "cobbleverse:erika",
+  "dim": "overworld",
+  "biome": "flower forest",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_koga",
+  "name": "Gym Koga",
+  "type": "Poison",
+  "counters": "Ground, Psychic",
+  "struct": "cobbleverse:koga",
+  "dim": "overworld",
+  "biome": "swamp",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_sabrina",
+  "name": "Gym Sabrina",
+  "type": "Psychic",
+  "counters": "Dark, Ghost, Bug",
+  "struct": "cobbleverse:sabrina",
+  "dim": "overworld",
+  "biome": "dark forest",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_blaine",
+  "name": "Gym Blaine",
+  "type": "Fire",
+  "counters": "Water, Ground, Rock",
+  "struct": "cobbleverse:blaine",
+  "dim": "the_nether",
+  "biome": "crimson forests in the Nether",
+  "cartography": "Nether Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_giovanni",
+  "name": "Gym Giovanni",
+  "type": "Ground",
+  "counters": "Water, Grass, Ice",
+  "struct": "cobbleverse:giovanni",
+  "dim": "overworld",
+  "biome": "underground next to an Ancient City (around y -30)",
+  "cartography": "Kanto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_elite_lorelei",
+  "name": "Elite Four Lorelei",
+  "type": "Ice",
+  "counters": "",
+  "struct": "cobbleverse:kanto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_elite_bruno",
+  "name": "Elite Four Bruno",
+  "type": "Fighting",
+  "counters": "",
+  "struct": "cobbleverse:kanto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_elite_agatha",
+  "name": "Elite Four Agatha",
+  "type": "Ghost",
+  "counters": "",
+  "struct": "cobbleverse:kanto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_elite_lance",
+  "name": "Elite Four Lance",
+  "type": "Dragon",
+  "counters": "",
+  "struct": "cobbleverse:kanto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/kanto/defeat_champion_blue",
+  "name": "Champion Blue",
+  "type": "mixed",
+  "counters": "",
+  "struct": "cobbleverse:kanto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_valerio",
+  "name": "Gym Valerio",
+  "type": "Flying",
+  "counters": "Electric, Ice, Rock",
+  "struct": "cobbleverse:valerio",
+  "dim": "overworld",
+  "biome": "windswept hills",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_raffaello",
+  "name": "Gym Raffaello",
+  "type": "Bug",
+  "counters": "Fire, Flying, Rock",
+  "struct": "cobbleverse:raffaello",
+  "dim": "overworld",
+  "biome": "sparse jungle",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_chiara",
+  "name": "Gym Chiara",
+  "type": "Normal",
+  "counters": "Fighting",
+  "struct": "cobbleverse:chiara",
+  "dim": "overworld",
+  "biome": "cherry grove",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_angelo",
+  "name": "Gym Angelo",
+  "type": "Ghost",
+  "counters": "Ghost, Dark",
+  "struct": "cobbleverse:angelo",
+  "dim": "overworld",
+  "biome": "lush cave",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_furio",
+  "name": "Gym Furio",
+  "type": "Fighting",
+  "counters": "Flying, Psychic, Fairy",
+  "struct": "cobbleverse:furio",
+  "dim": "overworld",
+  "biome": "desert",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_jasmine",
+  "name": "Gym Jasmine",
+  "type": "Steel",
+  "counters": "Fire, Fighting, Ground",
+  "struct": "cobbleverse:jasmine",
+  "dim": "overworld",
+  "biome": "taiga",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_alfredo",
+  "name": "Gym Alfredo",
+  "type": "Ice",
+  "counters": "Fire, Fighting, Rock, Steel",
+  "struct": "cobbleverse:alfredo",
+  "dim": "overworld",
+  "biome": "ice spikes",
+  "cartography": "Johto Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_sandra",
+  "name": "Gym Sandra",
+  "type": "Dragon",
+  "counters": "Ice, Dragon, Fairy",
+  "struct": "cobbleverse:sandra",
+  "dim": "the_nether",
+  "biome": "soul sand valleys in the Nether",
+  "cartography": "Nether Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_elite_pino",
+  "name": "Elite Four Pino",
+  "type": "Psychic",
+  "counters": "",
+  "struct": "cobbleverse:johto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_elite_koga",
+  "name": "Elite Four Koga",
+  "type": "Poison",
+  "counters": "",
+  "struct": "cobbleverse:johto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_elite_bruno",
+  "name": "Elite Four Bruno",
+  "type": "Fighting",
+  "counters": "",
+  "struct": "cobbleverse:johto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_elite_karen",
+  "name": "Elite Four Karen",
+  "type": "Dark",
+  "counters": "",
+  "struct": "cobbleverse:johto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ },
+ {
+  "adv": "cobbleverse:trainer/johto/defeat_champion_lance",
+  "name": "Champion Lance",
+  "type": "Dragon",
+  "counters": "",
+  "struct": "cobbleverse:johto_league",
+  "dim": "the_end",
+  "biome": "the End Highlands, the outer islands of The End",
+  "cartography": "End Cartography Table"
+ }
+]

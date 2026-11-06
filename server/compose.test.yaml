@@ -1,0 +1,26 @@
+# Throwaway test server with Carpet, so fake players (/player Bot spawn) make Pokemon spawn without a client.
+# Start: docker compose -f compose.test.yaml up -d
+services:
+  mc-test:
+    image: itzg/minecraft-server:java21
+    container_name: cobbleverse-test
+    tty: true
+    stdin_open: true
+    environment:
+      EULA: "TRUE"
+      DIFFICULTY: normal
+      TYPE: MODRINTH
+      MODRINTH_MODPACK: /pack/latest.mrpack
+      MODRINTH_PROJECTS: "carpet:f2mvlGrg"
+      MEMORY: 8G
+      ONLINE_MODE: "true"
+      VIEW_DISTANCE: 10
+      MOTD: '${MOTD:-\u00A76\u00A7k|||\u00A7r \u00A7c\u00A7lSIX SEVEN \u00A7r\u00A7e\u00A7lCOBBLEVERSE \u00A7r\u00A77(bootleg) \u00A76\u00A7k|||\n\u00A77Runs on borrowed RAM \u00A78\u2022 \u00A7aPok\u00E9mon catch themselves \u00A7c\u00A7l\u00A7k67\u00A7r\u00A7a%}'
+      ICON: /branding/server-icon.png
+      OVERRIDE_ICON: "TRUE"
+      SIMULATION_DISTANCE: 8
+    volumes:
+      - ./data-test:/data
+      - ../dist:/pack:ro
+      - ./branding:/branding:ro
+    restart: "no"

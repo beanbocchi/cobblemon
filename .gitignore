@@ -1,0 +1,10 @@
+# Downloads and Modrinth API cache
+.cache/
+# Intermediate files from build.sh
+build/
+# Built packs
+dist/
+# Server worlds, logs, downloaded mods
+server/data/
+server/data-test/
+__pycache__/

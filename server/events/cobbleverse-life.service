@@ -1,0 +1,11 @@
+[Unit]
+Description=COBBLEVERSE world life (quests, season, celebrations, shared dex, village, maps, landmarks, roamer, festivals, journal, titles, challenges)
+After=docker.service
+
+[Service]
+ExecStart=/usr/bin/python3 %h/cobblemon/server/events/cvlife.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=default.target
