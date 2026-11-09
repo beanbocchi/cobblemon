@@ -356,8 +356,13 @@ def party_top_level(name):
 
 
 def player_pos(name):
+    # rcon replies can carry another client's answer when several scripts share the console. Only trust a reply
+    # that names this player; a wrong position once ended huylba's Battle Tower run as "left the arena" (2026-11-09).
     dim = rc(f"data get entity {name} Dimension")
-    p = re.findall(r"(-?[\d.]+)d", rc(f"data get entity {name} Pos"))
+    out = rc(f"data get entity {name} Pos")
+    if f"{name} has the following entity data" not in out or f"{name} has the following entity data" not in dim:
+        return None
+    p = re.findall(r"(-?[\d.]+)d", out.split(f"{name} has the following entity data", 1)[1])
     if len(p) < 3:
         return None
     d = "overworld" if "overworld" in dim else "the_end" if "the_end" in dim else "the_nether"
@@ -2378,10 +2383,17 @@ def tower_tick():
             continue
         x, y, z = tower_base(r["arena"])
         pos = player_pos(name)
-        if not pos or pos[0] != "overworld" or not (x - 2 <= pos[1] <= x + 18 and y - 2 <= pos[2] <= y + 10
-                                                   and z - 2 <= pos[3] <= z + 28):
+        if not pos:
+            continue  # no clear reply this tick; check again next time instead of ending the run
+        if pos[0] != "overworld" or not (x - 2 <= pos[1] <= x + 18 and y - 2 <= pos[2] <= y + 10
+                                         and z - 2 <= pos[3] <= z + 28):
+            # Two bad reads in a row before ending, so one stray reply can't end a run.
+            r["outside"] = r.get("outside", 0) + 1
+            if r["outside"] < 2:
+                continue
             tower_end(name, "You left the arena, so the run is over.")
             continue
+        r["outside"] = 0
         if rct_defeats(r["tid"], name) > r["base"]:
             tower_floor_won(name, r)
             continue
