@@ -164,7 +164,7 @@ S = load_state()
 for k, v in {"seen": [], "pending": {}, "dex_milestone": 0, "village_level": 0, "landmarks": {}, "roamer": None,
              "challenges": {}, "titles": {}, "day": {}, "journal_done": "", "raid_done": "", "festival_note": "",
              "events": {}, "trades": {}, "news": [], "last_seen": {}, "goals": {}, "tips": {}, "fly": {},
-             "fly_spots": {}, "tower": {}, "tower_best": {}, "tower_return": {}, "outbreak": None,
+             "fly_spots": {}, "tower": {}, "tower_best": {}, "tower_return": {}, "tower_resume": {}, "outbreak": None,
              "grotto": None, "legend": {}, "legend_spots": {}, "legend_active": {},
              "finder": {}, "finder_given": [], "requests": {}, "requests_day": {}, "fishing": None, "expedition": None,
              "partner_km": {}, "partner_last": {}}.items():
@@ -2325,7 +2325,9 @@ def tower_cmd(name, args):
         tower_build(i)
     gm = re.search(r"(\d+)\s*$", rc(f"data get entity {name} playerGameType"))
     x, y, z = tower_base(i)
-    runs[name] = {"arena": i, "floor": 1, "origin": list(pos), "gm": int(gm.group(1)) if gm else 0,
+    # A run the server cut short by mistake resumes at the floor it reached (set in tower_resume by an admin).
+    start = S.setdefault("tower_resume", {}).pop(name, 1)
+    runs[name] = {"arena": i, "floor": start, "origin": list(pos), "gm": int(gm.group(1)) if gm else 0,
                   "cap": level_cap(name), "state": "wait", "next_at": time.time() + 6, "used": [], "fainted": 0}
     save()
     rc(f"execute in minecraft:overworld run tp {name} {x + 8.5} {y + 1} {z + 22.5} 180 0")
